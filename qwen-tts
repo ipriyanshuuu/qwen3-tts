@@ -1,0 +1,11 @@
+#!/bin/bash
+# Qwen3-TTS CLI Wrapper
+# 可从任何目录运行
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# 设置 HuggingFace 镜像
+export HF_ENDPOINT="${HF_ENDPOINT:-https://hf-mirror.com}"
+
+# 执行 Python CLI
+exec python3 "$SCRIPT_DIR/tts_cli.py" "$@"
